@@ -13131,11 +13131,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nitro\\Desktop\\New folder\\Expedia\\Expedia\\Expedia.csproj",
+      "projectUniqueName": "C:\\Users\\nitro\\Desktop\\Expedia\\Expedia\\Expedia.csproj",
       "projectName": "Expedia",
-      "projectPath": "C:\\Users\\nitro\\Desktop\\New folder\\Expedia\\Expedia\\Expedia.csproj",
+      "projectPath": "C:\\Users\\nitro\\Desktop\\Expedia\\Expedia\\Expedia.csproj",
       "packagesPath": "C:\\Users\\nitro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nitro\\Desktop\\New folder\\Expedia\\Expedia\\obj\\",
+      "outputPath": "C:\\Users\\nitro\\Desktop\\Expedia\\Expedia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
