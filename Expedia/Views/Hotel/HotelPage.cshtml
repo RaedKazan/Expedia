@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewData["Title"] = "HotelPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Expedia.Models.RequestHotel
+@{
+    ViewData["Title"] = "HotelPage";
+}
+
+@using (Html.BeginForm("ViewResult", "Hotel"))
+{
+    <div class="form-group "style="padding-top:25px">
+        <div class="row  ">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.DestinationName)
+                @Html.TextBoxFor(m => m.DestinationName, new { @class = "form-control", placeholder = "enter data" })
+            </div>
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.DestinationCity)
+                @Html.TextBoxFor(m => m.DestinationCity, new { @class = "form-control" })
+            </div>
+            <div class="col-md-3 ">
+                @Html.LabelFor(m => m.LengthOfStay)
+                @Html.EditorFor(m => m.LengthOfStay, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0" } })
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:15px">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.MinTripStartDate)
+                @Html.EditorFor(m => m.MinTripStartDate, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.MaxTripStartDate)
+                @Html.EditorFor(m => m.MaxTripStartDate, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <div class="row" style="padding-top:15px">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.MaxStarRating)
+                @Html.EditorFor(m => m.MaxStarRating, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", max = "5" } })
+
+            </div>
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.MinStarRating)
+                @Html.EditorFor(m => m.MinStarRating, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", max = "5" } })
+            </div>
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.MaxTotalRate)
+                @Html.EditorFor(m => m.MaxTotalRate, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", max = "5" } })
+            </div>
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.MinTotalRate)
+                @Html.EditorFor(m => m.MaxTotalRate, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", max = "5" } })
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:15px">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.MaxGuestRating)
+                @Html.EditorFor(m => m.MaxGuestRating, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", max = "5" } })
+            </div>
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.MinGuestRating)
+                @Html.EditorFor(m => m.MinGuestRating, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", max = "5" } })
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn">Save</button>
+}
+
+    <div class="box" >
+       
+
+    </div>
+
+
+
+
+
+
