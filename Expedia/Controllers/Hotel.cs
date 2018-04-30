@@ -14,10 +14,8 @@ namespace Expedia.Controllers
         private readonly IServices _service;
         public Hotel(IServices service)
         {
-            this._service = service;
+            _service = service;
         }
-
-
         public IActionResult HotelPage()
         {
             return View();
@@ -26,11 +24,8 @@ namespace Expedia.Controllers
         public IActionResult ViewResult(RequestHotel request)
         {
             var availableHotels = _service.AvailableHotels(request).Result;
-            
-            return View( availableHotels);
+            return View(availableHotels);
         }
-
-
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

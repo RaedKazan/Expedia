@@ -8,3 +8,4 @@ C:\Users\nitro\Desktop\New folder\Expedia\Expedia\obj\Debug\netcoreapp2.0\Expedi
 C:\Users\nitro\Desktop\New folder\Expedia\Expedia\obj\Debug\netcoreapp2.0\Expedia.AssemblyInfo.cs
 C:\Users\nitro\Desktop\New folder\Expedia\Expedia\obj\Debug\netcoreapp2.0\Expedia.dll
 C:\Users\nitro\Desktop\New folder\Expedia\Expedia\obj\Debug\netcoreapp2.0\Expedia.pdb
+C:\Users\nitro\Desktop\New folder\Expedia\Expedia\obj\Debug\netcoreapp2.0\Expedia.csprojResolveAssemblyReference.cache

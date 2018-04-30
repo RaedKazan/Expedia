@@ -14,59 +14,50 @@ namespace Expedia.Service
 
         public async Task<AvailableHotels> AvailableHotels(RequestHotel request)
         {
-            // create the url 
-            //fun to add the extintion to the url    :TODO
-
             var FullUrl = BullidUrl(request);
-
-            //https://www.dotnetperls.com/httpclient
-            var client = new HttpClient();   // create http instance
-            var response = await client.GetAsync(FullUrl); // calling the wanted url
-                                                           //    response.EnsureSuccessStatusCode();
-            var content = response.Content; //retriveing the data from the site
-            var result = await content.ReadAsStringAsync();  // read the data as a string 
-                                                             //https://www.newtonsoft.com/json/help/html/DeserializeObject.htm
-            var responseHotel = JsonConvert.DeserializeObject<AvailableHotels>(result);  //Convert the data to AvailableHotels object
+            var client = new HttpClient();  
+            var response = await client.GetAsync(FullUrl); 
+            var content = response.Content; 
+            var result = await content.ReadAsStringAsync();  
+            var responseHotel = JsonConvert.DeserializeObject<AvailableHotels>(result);  
             return responseHotel;
-
-
         }
 
         string BullidUrl(RequestHotel request)
         {
             string fuLlUrl = Url;
 
-            if (request.DestinationCity != "" && request.DestinationCity != null)
+            if (!string.IsNullOrEmpty(request.DestinationCity))
                 fuLlUrl += "&DestinationCity=" + request.DestinationCity;
 
-            if (request.DestinationName != "" && request.DestinationName != null)
+            if (!string.IsNullOrEmpty(request.DestinationName))
                 fuLlUrl += "&DestinationName=" + request.DestinationName;
 
-            if (request.LengthOfStay != "" && request.LengthOfStay != null)
+            if (!string.IsNullOrEmpty(request.LengthOfStay))
                 fuLlUrl += "&LengthOfStay=" + request.LengthOfStay;
 
-            if (request.MaxGuestRating != "" && request.MaxGuestRating != null)
+            if (!string.IsNullOrEmpty(request.MaxGuestRating))
                 fuLlUrl += "&MaxGuestRating=" + request.MaxGuestRating;
 
-            if (request.MaxStarRating != "" && request.MaxStarRating != null)
+            if (!string.IsNullOrEmpty(request.MaxStarRating))
                 fuLlUrl += "&MaxStarRating=" + request.MaxStarRating;
 
-            if (request.MaxTotalRate != "" && request.MaxTotalRate != null)
+            if (!string.IsNullOrEmpty(request.MaxTotalRate))
                 fuLlUrl += "&MaxTotalRate=" + request.MaxTotalRate;
 
-            if (request.MaxTripStartDate != "" && request.MaxTripStartDate != null)
+            if (!string.IsNullOrEmpty(request.MaxTripStartDate))
                 fuLlUrl += "&MaxTotalRate=" + request.MaxTripStartDate;
 
-            if (request.MinGuestRating != "" && request.MinGuestRating != null)
+            if (!string.IsNullOrEmpty(request.MinGuestRating))
                 fuLlUrl += "&MinGuestRating=" + request.MinGuestRating;
 
-            if (request.MinStarRating != "" && request.MinStarRating != null)
+            if (!string.IsNullOrEmpty(request.MinStarRating))
                 fuLlUrl += "&MinStarRating=" + request.MinStarRating;
 
-            if (request.MinTotalRate != "" && request.MinTotalRate != null)
+            if (!string.IsNullOrEmpty(request.MinTotalRate))
                 fuLlUrl += "&MinTotalRate=" + request.MinTotalRate;
 
-            if (request.MinTripStartDate != "" && request.MinTripStartDate != null)
+            if (!string.IsNullOrEmpty(request.MinTripStartDate))
                 fuLlUrl += "&MinTripStartDate=" + request.MinTripStartDate;
 
             return fuLlUrl;
