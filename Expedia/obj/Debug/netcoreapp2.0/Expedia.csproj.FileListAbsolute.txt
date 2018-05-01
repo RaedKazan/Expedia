@@ -19,3 +19,4 @@ C:\Users\nitro\Desktop\Expedia\Expedia\bin\Debug\netcoreapp2.0\Expedia.runtimeco
 C:\Users\nitro\Desktop\Expedia\Expedia\bin\Debug\netcoreapp2.0\Expedia.runtimeconfig.dev.json
 C:\Users\nitro\Desktop\Expedia\Expedia\bin\Debug\netcoreapp2.0\Expedia.dll
 C:\Users\nitro\Desktop\Expedia\Expedia\bin\Debug\netcoreapp2.0\Expedia.pdb
+C:\Users\nitro\Desktop\Expedia\Expedia\obj\Debug\netcoreapp2.0\Expedia.csprojResolveAssemblyReference.cache
