@@ -4,10 +4,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model AvailableHotels;
-@if (Model.Offers.Hotel==null)
+@if (Model.Offers.Hotel == null)
 {
     <div>
-        <span>No Hotel Offers Found!</span>
+        <h3>No Hotel Offers Found please try again</h3>
     </div>
 }
 else
@@ -36,7 +36,7 @@ else
 
 
             </div>
-
+            <hr />
         </div>
     }
     @if (!Model.Offers.Hotel.Any())
