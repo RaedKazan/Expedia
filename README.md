@@ -4,7 +4,7 @@ Stable (master):
 [![Build Status](https://travis-ci.org/RaedKazan/Expedia.svg?branch=master)](https://travis-ci.org/RaedKazan/Expedia)
 
 
-The Application built using .Net core 2.0 Framework C# language.:
+The Application built using .Net core 2.0 Framework C# language.
 
 # Prerequisites:
 - Visual Studio 2017 15.5.7
