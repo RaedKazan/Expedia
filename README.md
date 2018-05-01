@@ -15,7 +15,7 @@ The Application built using .Net core 2.0 Framework C# language.:
 git clone https://github.com/RaedKazan/Expedia 
 ```
 
-### Build from Visual Studio
-1. Just open the .sln file. 
+# Build from Visual Studio
+ open the .sln file. 
 
 
