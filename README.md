@@ -1,4 +1,4 @@
 # Build Status
 testing
 Stable (master):
-https://travis-ci.org/RaedKazan/Expedia.svg?branch=master
+[![Build Status](https://travis-ci.org/RaedKazan/Expedia.svg?branch=master)](https://travis-ci.org/RaedKazan/Expedia)
